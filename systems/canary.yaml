@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: canary-app
+  description: Hello world style services that platform team can use to ensure operations of the platform.
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: platform-team
+  domain: platform-domain
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello
+  description: Tanzu Java Web App
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=hello'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: platform-team
+  system: canary-app
