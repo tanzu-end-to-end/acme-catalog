@@ -1,0 +1,100 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+ name: acme-dev
+  description: Acme Dev
+spec:
+  type: team
+  profile:
+    displayName: Acme Dev
+    email: acmedev@acme.com
+  children: [devteam1,devteam2,platform-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+ name: devteam1
+  description: Dev Team 1
+spec:
+  type: team
+  profile:
+    displayName: Dev Team 1
+    email: devteam1@acme.com
+  parent: acme-dev
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: cody
+spec:
+  profile:
+    displayName: Cody
+    email: cody@acme.com
+  memberOf: [devteam1]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+ name: naomi
+spec:
+  profile:
+    displayName: Naomi
+    email: naomi@acme.com
+  memberOf: [devteam1]
+---  
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+ name: devteam2
+  description: Dev Team 2
+spec:
+  type: team
+  profile:
+    displayName: Dev Team 2
+    email: devteam2@acme.com
+  parent: acme-dev
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: shmody
+spec:
+  profile:
+    displayName: Shmody
+    email: shmody@acme.com
+  memberOf: [devteam2]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+ name: shmaomi
+spec:
+  profile:
+    displayName: Shmaomi
+    email: shmaomi@acme.com
+  memberOf: [devteam2]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+ name: platform-team
+  description: Platform Team
+spec:
+  type: team
+  profile:
+    displayName: Platform Team
+    email: platform-team@acme.com
+  parent: acme-dev
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: alana
+spec:
+  profile:
+    displayName: Alana
+    email: alana@acme.com
+  memberOf: [platform-team]
