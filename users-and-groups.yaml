@@ -8,18 +8,18 @@ spec:
   profile:
     displayName: Acme Dev
     email: acmedev@acme.com
-  children: [devteam1,devteam2,platform-team]
+  children: [dev-team-1,dev-team-2,platform-team]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: devteam1
+  name: dev-team-1
   description: Dev Team 1
 spec:
   type: team
   profile:
     displayName: Dev Team 1
-    email: devteam1@acme.com
+    email: dev-team-1@acme.com
   parent: acme-dev
   children: []
 ---
@@ -31,7 +31,7 @@ spec:
   profile:
     displayName: Cody
     email: cody@acme.com
-  memberOf: [devteam1]
+  memberOf: [dev-team-1]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -41,18 +41,18 @@ spec:
   profile:
     displayName: Naomi
     email: naomi@acme.com
-  memberOf: [devteam1]
+  memberOf: [dev-team-1]
 ---  
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: devteam2
+  name: dev-team-2
   description: Dev Team 2
 spec:
   type: team
   profile:
     displayName: Dev Team 2
-    email: devteam2@acme.com
+    email: dev-team-2@acme.com
   parent: acme-dev
   children: []
 ---
@@ -64,7 +64,7 @@ spec:
   profile:
     displayName: Shmody
     email: shmody@acme.com
-  memberOf: [devteam2]
+  memberOf: [dev-team-2]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -74,7 +74,7 @@ spec:
   profile:
     displayName: Shmaomi
     email: shmaomi@acme.com
-  memberOf: [devteam2]
+  memberOf: [dev-team-2]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group

@@ -6,7 +6,7 @@ metadata:
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
-  owner: devteam2
+  owner: dev-team-2
   domain: acme-internal-apps
 
 ---
@@ -25,7 +25,7 @@ spec:
   providesApis:
     - spring-sensors-api
   lifecycle: alpha
-  owner: devteam2
+  owner: dev-team-2
   system: spring-sensors
 
 ---
@@ -55,7 +55,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: devteam2
+  owner: dev-team-2
   system: spring-sensors
   definition: |
     openapi: 3.0.1

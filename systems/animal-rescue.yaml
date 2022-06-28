@@ -6,7 +6,7 @@ metadata:
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
-  owner: devteam2
+  owner: dev-team-2
   domain: acme-internal-apps
 
 ---
@@ -24,7 +24,7 @@ metadata:
 spec:
   type: service
   lifecycle: alpha
-  owner: devteam2
+  owner: dev-team-2
   system: animal-rescue
 
 ---
@@ -44,7 +44,7 @@ spec:
   providesApis:
     - animal-rescue-api
   lifecycle: alpha
-  owner: devteam2
+  owner: dev-team-2
   system: animal-rescue
 
 ---
@@ -74,7 +74,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: devteam2
+  owner: dev-team-2
   system: animal-rescue
   definition: |
     openapi: 3.0.1

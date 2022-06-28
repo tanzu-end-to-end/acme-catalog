@@ -6,7 +6,7 @@ metadata:
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
-  owner: devteam1
+  owner: dev-team-1
   domain: acme-internal-apps
 
 ---
@@ -26,7 +26,7 @@ spec:
   providesApis:
     - dot-net-todos-api
   lifecycle: alpha
-  owner: devteam1
+  owner: dev-team-1
   system: dot-net-todos
 
 ---
@@ -56,7 +56,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: devteam1
+  owner: dev-team-1
   system: dot-net-todos
   definition: |
     openapi: 3.0.1
