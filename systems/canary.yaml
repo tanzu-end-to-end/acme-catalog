@@ -3,8 +3,6 @@ kind: System
 metadata:
   name: canary
   description: Hello world style services that platform team can use to ensure operations of the platform.
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
 spec:
   owner: platform-team
   domain: platform-domain
@@ -21,7 +19,7 @@ metadata:
     - web
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=hello'
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=hello
     backstage.io/source-location: url:https://dev.azure.com/doddatvmware/tap-lab-canary-app/_git/hello
 spec:
   type: service
