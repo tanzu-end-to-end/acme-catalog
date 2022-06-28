@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
- name: animal-rescue
- description: Animal Rescue Application
+  name: animal-rescue
+  description: Animal Rescue Application
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
@@ -32,7 +32,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
- name: animal-rescue-front-end
+  name: animal-rescue-front-end
   description: Animal Rescue Back End
   tags:
     - microservice
@@ -42,7 +42,7 @@ metadata:
 spec:
   type: service
   providesApis:
-   - animal-rescue-api
+    - animal-rescue-api
   lifecycle: alpha
   owner: devteam2
   system: animal-rescue
@@ -52,7 +52,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
- name: postgres
+  name: postgres
   description: Tanzu SQL Postgres Database
   annotations:
     'backstage.io/techdocs-ref': dir:.

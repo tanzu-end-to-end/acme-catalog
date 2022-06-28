@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
- name: pet-clinic
+  name: pet-clinic
   description: Pet Clinic Application
   annotations:
     'backstage.io/techdocs-ref': dir:.
@@ -24,7 +24,7 @@ metadata:
 spec:
   type: service
   providesApis:
-   - pet-clinic-api
+    - pet-clinic-api
   lifecycle: alpha
   owner: devteam1
   system: pet-clinic

@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
- name: acme-dev
+  name: acme-dev
   description: Acme Dev
 spec:
   type: team
@@ -13,7 +13,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
- name: devteam1
+  name: devteam1
   description: Dev Team 1
 spec:
   type: team
@@ -36,7 +36,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
- name: naomi
+  name: naomi
 spec:
   profile:
     displayName: Naomi
@@ -46,7 +46,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
- name: devteam2
+  name: devteam2
   description: Dev Team 2
 spec:
   type: team
@@ -69,7 +69,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
- name: shmaomi
+  name: shmaomi
 spec:
   profile:
     displayName: Shmaomi
@@ -79,7 +79,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
- name: platform-team
+  name: platform-team
   description: Platform Team
 spec:
   type: team

@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
- name: spring-sensors
- description: Spring Sensors Application
+  name: spring-sensors
+  description: Spring Sensors Application
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
@@ -23,7 +23,7 @@ metadata:
 spec:
   type: service
   providesApis:
-   - spring-sensors-api
+    - spring-sensors-api
   lifecycle: alpha
   owner: devteam2
   system: spring-sensors
@@ -33,7 +33,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
- name: rabbitmq
+  name: rabbitmq
   description: Tanzu RabbitMQ Service
   annotations:
     'backstage.io/techdocs-ref': dir:.

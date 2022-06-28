@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
- name: dot-net-todos
- description: Dot Net Todos Application
+  name: dot-net-todos
+  description: Dot Net Todos Application
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
@@ -24,7 +24,7 @@ metadata:
 spec:
   type: service
   providesApis:
-   - dot-net-todos-api
+    - dot-net-todos-api
   lifecycle: alpha
   owner: devteam1
   system: dot-net-todos
@@ -34,7 +34,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
- name: sql-server
+  name: sql-server
   description: SQL Server Database
   annotations:
     'backstage.io/techdocs-ref': dir:.
