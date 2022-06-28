@@ -34,7 +34,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
- name: mysql
+  name: mysql
   description: Tanzu SQL MySQL Database
   annotations:
     'backstage.io/techdocs-ref': dir:.
