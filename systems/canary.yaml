@@ -11,7 +11,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: hello
-  description: Tanzu Java Web App
+  description: Simple spring-boot java app demonstrating hello world capability
   tags:
     - app-accelerator
     - java
@@ -23,6 +23,6 @@ metadata:
     backstage.io/source-location: url:https://dev.azure.com/doddatvmware/tap-lab-canary-app/_git/hello
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: production
   owner: platform-team
   system: canary
