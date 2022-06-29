@@ -18,7 +18,6 @@ metadata:
     - microservice
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-petclinic'
-    'backstage.io/techdocs-ref': dir:.
 spec:
   type: service
   providesApis:
@@ -30,10 +29,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: mysql
-  description: Tanzu SQL MySQL Database
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
+  name: postgres
+  description: Tanzu SQL Postgres Database
 spec:
   type: database
   owner: platform-team

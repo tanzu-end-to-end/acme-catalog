@@ -8,9 +8,7 @@ metadata:
 spec:
   owner: dev-team-2
   domain: acme-internal-apps
-
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -26,9 +24,7 @@ spec:
   lifecycle: alpha
   owner: dev-team-2
   system: animal-rescue
-
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -46,9 +42,7 @@ spec:
   lifecycle: alpha
   owner: dev-team-2
   system: animal-rescue
-
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
@@ -61,7 +55,6 @@ spec:
   owner: platform-team
   system: animal-rescue
 ---
-
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
