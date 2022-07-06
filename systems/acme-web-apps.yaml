@@ -82,7 +82,6 @@ spec:
   type: database
   owner: platform-team
   system: acme-web-apps
-  subcomponentOf: acme-api
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
