@@ -14,3 +14,4 @@ spec:
     - ./systems/dotnet-todos.yaml
     - ./systems/spring-petclinic.yaml
     - ./systems/spring-sensors.yaml
+    - ./systems/acme-web-apps.yaml
