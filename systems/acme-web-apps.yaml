@@ -80,4 +80,4 @@ spec:
   type: database
   owner: platform-team
   system: acme-web-apps
-  subcomponentOf: acme-api
+  subcomponentOf: Component:acme-api
