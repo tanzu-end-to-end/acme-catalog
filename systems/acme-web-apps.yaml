@@ -63,6 +63,7 @@ metadata:
     - url: https://vmware.slack.com/archives/C028W549JHX
       icon: chat
       title: Slack Channel
+spec:
   type: service
   lifecycle: beta
   owner: dev-team-2
