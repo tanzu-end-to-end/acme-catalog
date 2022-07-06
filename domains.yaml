@@ -17,3 +17,13 @@ metadata:
     'backstage.io/techdocs-ref': dir:.
 spec:
   owner: platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: acme-web-apps
+  description: Everything related to the acme web apps
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: acme-sre
