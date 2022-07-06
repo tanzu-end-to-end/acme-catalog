@@ -20,6 +20,19 @@ metadata:
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=gpt3-jsm'
     'backstage.io/techdocs-ref': dir:.
+  links:
+    - url: https://github.com/jianhuabi/gpt3_jsm
+      icon: github
+      title: Code Hosting Repo
+    - url: https://jira.eng.vmware.com/projects/PSTAR
+      title: JIRA Project
+      icon: dashboard
+    - url: https://runway-ci.eng.vmware.com/teams/project-star/pipelines/develop
+      icon: dashboard
+      title: Concourse Pipeline
+    - url: https://vmware.slack.com/archives/C028W549JHX
+      icon: chat
+      title: Slack Channel
 spec:
   type: service
   lifecycle: beta
@@ -37,13 +50,25 @@ metadata:
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
     'backstage.io/techdocs-ref': dir:.
-spec:
+  links:
+    - url: https://github.com/jianhuabi/tap-tanzu-java-web-app
+      icon: github
+      title: Code Hosting Repo
+    - url: https://jira.eng.vmware.com/projects/PSTAR
+      title: JIRA Project
+      icon: dashboard
+    - url: https://runway-ci.eng.vmware.com/teams/project-star/pipelines/develop
+      icon: dashboard
+      title: Concourse Pipeline
+    - url: https://vmware.slack.com/archives/C028W549JHX
+      icon: chat
+      title: Slack Channel
   type: service
   lifecycle: beta
   owner: dev-team-2
   system: acme-web-apps
   dependsOn:
-  - Resource:postgres-acme-web-apps
+    - Resource:postgres-acme-web-apps
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
