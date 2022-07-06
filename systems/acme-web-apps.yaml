@@ -52,3 +52,5 @@ spec:
   type: database
   owner: platform-team
   system: acme-web-apps
+  dependencyOf:
+    - acme-api
