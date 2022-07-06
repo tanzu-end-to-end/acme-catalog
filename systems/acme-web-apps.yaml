@@ -42,7 +42,7 @@ spec:
   lifecycle: beta
   owner: dev-team-2
   system: acme-web-apps
-  dependsOn
+  dependsOn:
   - Resource:postgres-acme-web-apps
 ---
 apiVersion: backstage.io/v1alpha1
