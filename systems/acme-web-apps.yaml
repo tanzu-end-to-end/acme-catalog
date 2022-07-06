@@ -1,0 +1,54 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: acme-web-apps
+  description: ACME Application 演示应用系统
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: acme-dev
+  domain: acme-sre
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: acme-frontend
+  description: ACME Application 前端应用
+  tags:
+    - microservice
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=gpt3-jsm'
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  type: service
+  lifecycle: beta
+  owner: dev-team-2
+  system: acme-web-apps
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: acme-api
+  description: ACME Application 后端API应用
+  tags:
+    - microservice
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  type: service
+  lifecycle: beta
+  owner: dev-team-2
+  system: acme-web-apps
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: postgres
+  description: ACME Application 后端API应用数据库子系统 Postgres Database
+spec:
+  type: database
+  owner: platform-team
+  system: acme-web-apps
