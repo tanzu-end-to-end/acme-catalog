@@ -29,7 +29,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: postgres
+  name: spring-petclinic-postgres
   description: Tanzu SQL Postgres Database
 spec:
   type: database
