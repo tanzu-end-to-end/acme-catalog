@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: dot-net-todos
+  name: dotnet-todos
   description: Dot Net Todos Application
   annotations:
     'backstage.io/techdocs-ref': dir:.
@@ -14,20 +14,39 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: dot-net-todos
+  name: dotnet-todos-api
   description: Todos .NET
   tags:
     - microservice
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dot-net-todos'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dotnet-todos-api'
     'backstage.io/techdocs-ref': dir:.
 spec:
   type: service
   providesApis:
-    - dot-net-todos-api
+    - dotnet-todos-api
   lifecycle: alpha
   owner: dev-team-1
-  system: dot-net-todos
+  system: dotnet-todos
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dotnet-todos-app
+  description: Todos frontend SPA
+  tags:
+    - microservice
+    - angular
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dotnet-todos-app'
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  type: service
+  lifecycle: alpha
+  owner: dev-team-1
+  system: dotnet-todos
 
 ---
 
@@ -41,13 +60,13 @@ metadata:
 spec:
   type: database
   owner: platform-team
-  system: dot-net-todos
+  system: dotnet-todos
 ---
 
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: dot-net-todos-api
+  name: dotnet-todos-api
   description: The API for Dot Net Todos Application
   links:
     - url: https://api.agify.io
@@ -57,7 +76,7 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: dev-team-1
-  system: dot-net-todos
+  system: dotnet-todos
   definition: |
     openapi: 3.0.1
     info:
