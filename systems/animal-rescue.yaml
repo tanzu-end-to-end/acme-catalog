@@ -12,12 +12,12 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: animal-rescue-front-end
+  name: animal-rescue-frontend
   description: Animal Rescue Front End
   tags:
     - microservice
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=animal-rescue-front-end'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=animal-rescue-frontend'
     'backstage.io/techdocs-ref': dir:.
 spec:
   type: service
@@ -28,12 +28,12 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: animal-rescue-front-end
+  name: animal-rescue-backend
   description: Animal Rescue Back End
   tags:
     - microservice
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=animal-rescue-back-end'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=animal-rescue-backend'
     'backstage.io/techdocs-ref': dir:.
 spec:
   type: service
