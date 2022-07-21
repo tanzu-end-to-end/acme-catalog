@@ -53,40 +53,40 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: canary-api
-  description: The demo API for Tanzu Application Platform GUI
+  name: animal-rescue-api
+  description: The API for Animal Rescue Application (placeholder)
   links:
-  - url: https://api.agify.io 
-    title: API Definition 
-    icon: docs
+    - url: https://api.agify.io
+      title: API Definition
+      icon: docs
 spec:
   type: openapi
   lifecycle: production
   owner: platform-team
-  system: canary # Or specify system name of your choice 
+  system: canary
   definition: |
-    openapi: 3.0.1 
+    openapi: 3.0.1
     info:
-      title: defaultTitle 
-      description: defaultDescription 
+      title: Demo API
+      description: defaultDescription
       version: '0.1'
     servers:
       - url: https://api.agify.io
-    paths: 
+    paths:
       /:
         get:
-          description: Auto generated using Swagger Inspector 
+          description: Auto generated using Swagger Inspector
           parameters:
-          - name: name 
-            in: query 
-            schema:
-              type: string 
-            example: type_any_name
-          responses: 
+            - name: name
+              in: query
+              schema:
+                type: string
+              example: type_any_name
+          responses:
             '200':
-              description: Auto generated using Swagger Inspector 
+              description: Auto generated using Swagger Inspector
               content:
-                application/json; charset=utf-8: 
+                application/json; charset=utf-8:
                   schema:
-                    type: string 
+                    type: string
                   examples: {}
