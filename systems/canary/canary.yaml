@@ -48,11 +48,11 @@ spec:
   owner: platform-team
   system: canary
 ---
-apiVersion: backstage.io/v1alpha1 kind:
+apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: canary-api
-  description: The demo API for Tanzu Application Platform GUI links:
+  description: The demo API for Tanzu Application Platform GUI
   links:
   - url: https://api.agify.io 
     title: API Definition 
