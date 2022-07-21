@@ -21,6 +21,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=hello
     backstage.io/source-location: url:https://dev.azure.com/doddatvmware/tap-lab-canary-app/_git/hello
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: production
