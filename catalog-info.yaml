@@ -10,7 +10,7 @@ spec:
     - ./users-and-groups.yaml
     - ./domains.yaml
     - ./systems/animal-rescue.yaml
-    - ./systems/canary.yaml
+    - ./systems/canary/canary.yaml
     - ./systems/dotnet-todos.yaml
     - ./systems/spring-petclinic.yaml
     - ./systems/spring-sensors.yaml
