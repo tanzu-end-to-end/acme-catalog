@@ -1,8 +1,17 @@
 site_name: 'Yelb demo catalog'
 
 nav:
-  - Home: index.md
-  - Adding Documentation: add-docs.md
+  - Summary: workshop-summary.md
+  - Overview: workshop-overview.md
+  - LearningCenter: exercises/01-Learning-Center.md
+  - AppAccelerator: exercises/02-App-Accelerator.md
+  - IDE_Tools: exercises/03-IDE-Tools.md
+  - Iterative_Development: exercises/04-Iterative-Development.md
+  - App_Live_View: exercises/05-App-Live-View.md
+  - Submitting_Build: exercises/06-Submitting-Build.md
+  - 'Work Load': exercises/07-Workload.md
+  - 'Supply Chain': exercises/08-Supply-Chain.md
+  - Deliverable: exercises/09-Deliverable.md
 
 plugins:
   - techdocs-core
