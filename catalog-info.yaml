@@ -11,7 +11,7 @@ spec:
     - ./domains.yaml
     - ./systems/animal-rescue.yaml
     - ./systems/canary/canary.yaml
-    - ./systems/dotnet-todos.yaml
+    - ./systems/dotnet-todos/dotnet-todos.yaml
     - ./systems/spring-petclinic.yaml
     - ./systems/spring-sensors.yaml
    # - https://github.com/jeffellin/dotnet-employee-todo-list-api/blob/main/catalog/dotnet-todos-api-location.yaml 
