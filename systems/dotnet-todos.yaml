@@ -16,7 +16,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: dotnet-todos-app
-  description: Todos frontend SPA
+  description: Todos frontend Single Page App 
   tags:
     - microservice
     - angular
@@ -36,8 +36,6 @@ kind: Resource
 metadata:
   name: sql-server
   description: SQL Server Database
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
 spec:
   type: database
   owner: platform-team
