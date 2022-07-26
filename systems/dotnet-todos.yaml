@@ -11,26 +11,6 @@ spec:
 
 ---
 
-
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: dotnet-todos-app
-  description: Todos frontend Single Page App 
-  tags:
-    - microservice
-    - angular
-  annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dotnet-todos-app'
-    'backstage.io/techdocs-ref': dir:.
-spec:
-  type: service
-  lifecycle: alpha
-  owner: dev-team-1
-  system: dotnet-todos
-
----
-
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
