@@ -3,8 +3,6 @@ kind: Domain
 metadata:
   name: acme-internal-apps
   description: Acme Internal Applications
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
 spec:
   owner: acme-dev
 ---
@@ -13,7 +11,5 @@ kind: Domain
 metadata:
   name: platform-domain
   description: Everything related to the Platform
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
 spec:
   owner: platform-team

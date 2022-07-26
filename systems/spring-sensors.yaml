@@ -17,7 +17,6 @@ metadata:
     - microservice
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-sensors'
-    'backstage.io/techdocs-ref': dir:.
 spec:
   type: service
   providesApis:
