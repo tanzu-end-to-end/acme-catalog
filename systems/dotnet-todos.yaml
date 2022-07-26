@@ -11,25 +11,6 @@ spec:
 
 ---
 
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: dotnet-todos-api
-  description: Todos .NET
-  tags:
-    - microservice
-  annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dotnet-todos-api'
-    'backstage.io/techdocs-ref': dir:.
-spec:
-  type: service
-  providesApis:
-    - dotnet-todos-api
-  lifecycle: alpha
-  owner: dev-team-1
-  system: dotnet-todos
-
----
 
 apiVersion: backstage.io/v1alpha1
 kind: Component
