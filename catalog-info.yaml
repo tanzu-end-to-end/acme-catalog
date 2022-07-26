@@ -14,3 +14,4 @@ spec:
     - ./systems/dotnet-todos.yaml
     - ./systems/spring-petclinic.yaml
     - ./systems/spring-sensors.yaml
+    - https://github.com/jeffellin/dotnet-employee-todo-list-api/blob/main/catalog/dotnet-todos-api-location.yaml
