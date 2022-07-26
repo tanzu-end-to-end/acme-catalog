@@ -2,10 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: dotnet-todos
-  links:
-    - url: https://dotnet-todos.appref2.appref.end2end.link
-      title: Employee Todos
-      icon: dashboard
   description: Dot Net Todos Application
   annotations:
     'backstage.io/techdocs-ref': dir:.
@@ -20,6 +16,10 @@ kind: Component
 metadata:
   name: dotnet-todos-app
   description: Todos frontend SPA
+  links:
+    - url: https://dotnet-todos.appref2.appref.end2end.link
+      title: Employee Todos
+      icon: dashboard
   tags:
     - microservice
     - angular
