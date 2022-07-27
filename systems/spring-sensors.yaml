@@ -19,8 +19,6 @@ metadata:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-sensors'
 spec:
   type: service
-  providesApis:
-    - spring-sensors-api
   lifecycle: alpha
   owner: dev-team-2
   system: spring-sensors
