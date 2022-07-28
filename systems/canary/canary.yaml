@@ -20,7 +20,7 @@ metadata:
     - tanzu
   annotations:
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=hello
-    backstage.io/source-location: url:https://dev.azure.com/doddatvmware/tap-lab-canary-app/_git/hello
+    backstage.io/source-location: url:https://github.com/tanzu-end-to-end/trp-tanzu-java-web-app
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
@@ -43,7 +43,7 @@ metadata:
     - tanzu
   annotations:
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=appsso-starter-java
-    backstage.io/source-location: url:https://dev.azure.com/doddatvmware/tap-lab-canary-app/_git/appsso-starter-java
+    backstage.io/source-location: url:https://github.com/tanzu-end-to-end/trp-appsso-starter-java
 spec:
   type: service
   lifecycle: production
