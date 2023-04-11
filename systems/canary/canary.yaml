@@ -44,6 +44,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=appsso-starter-java
     backstage.io/source-location: url:https://github.com/tanzu-end-to-end/trp-appsso-starter-java
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: production
