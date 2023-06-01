@@ -15,3 +15,4 @@ spec:
     - ./systems/spring-petclinic.yaml
     - ./systems/spring-sensors.yaml
     - https://github.com/tanzu-end-to-end/trp-dotnet-employee-todo-list-api/blob/main/catalog/dotnet-todos-api-location.yaml
+    - https://github.com/ciberkleid/spring-cloud-demo-tap/blob/main/tap/catalog/catalog-info.yaml
