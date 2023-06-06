@@ -3,8 +3,6 @@ kind: System
 metadata:
   name: dotnet-todos
   description: Dot Net Todos Application
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
 spec:
   owner: dev-team-1
   domain: acme-internal-apps
@@ -25,7 +23,6 @@ metadata:
     - angular
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dotnet-todos-app'
-    'backstage.io/techdocs-ref': dir:.
 spec:
   type: service
   consumesApis:
