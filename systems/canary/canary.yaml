@@ -27,8 +27,6 @@ spec:
   lifecycle: production
   owner: platform-team
   system: canary
-  providesApis:
-    - canary-api
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -51,43 +49,4 @@ spec:
   owner: platform-team
   system: canary
 ---
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: animal-rescue-api
-  description: The API for Animal Rescue Application (placeholder)
-  links:
-    - url: https://api.agify.io
-      title: API Definition
-      icon: docs
-spec:
-  type: openapi
-  lifecycle: production
-  owner: platform-team
-  system: canary
-  definition: |
-    openapi: 3.0.1
-    info:
-      title: Demo API
-      description: defaultDescription
-      version: '0.1'
-    servers:
-      - url: https://api.agify.io
-    paths:
-      /:
-        get:
-          description: Auto generated using Swagger Inspector
-          parameters:
-            - name: name
-              in: query
-              schema:
-                type: string
-              example: type_any_name
-          responses:
-            '200':
-              description: Auto generated using Swagger Inspector
-              content:
-                application/json; charset=utf-8:
-                  schema:
-                    type: string
-                  examples: {}
+
